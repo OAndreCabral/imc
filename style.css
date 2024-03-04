@@ -1,0 +1,80 @@
+.calculadora {
+    display: flex;
+    justify-content: center;
+    background-color: #1A1535;
+}
+
+.calculadoraImc {
+    display: flex;
+    color: #FCFCF4;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.calculadoraImcTitulo {
+    width: 750px;
+    color: #D077AB;
+}
+
+.calculadoraImcInfo {
+    display: flex;
+    align-items: center;
+    justify-self: left;
+    flex-direction: column;
+    background-color: #302A4E;
+    padding-top: 25px;
+    width: 750px;
+
+}
+
+.calculadoraImcInfoNome {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 80%;
+}
+
+.calculadoraImcInfoNomeInput {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.calculadoraImcInfoDados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 550px;
+}
+
+.calculadoraImcInfoDadosIdadeSexo {
+    display: flex;
+    flex-direction: column;  
+    text-align: left;
+}
+
+.calculadoraImcInfoIdadeInput {
+
+    width: 100%;
+    border-radius: 6px;
+}
+
+.calculadoraImcInfoSexoInput {
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+.calculadoraImcInfoBotao {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+}
+
+.resultados {
+    background-color: #FF8DD0;
+}
