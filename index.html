@@ -15,20 +15,20 @@
 
 <body class="calculadora">
     <main>
-        <section class="calculadoraImc">
+        <form class="calculadoraImc">
             <h1 class="calculadoraImcTitulo">Calculadora IMC</h1>
             <div class="calculadoraImcInfo">
 
                 <div class="calculadoraImcInfoNome">
                     <label for="nome">Nome</label>
-                    <input id="calculadoraImcInfoInputNome" class="calculadoraImcInfoInputNome" name="nome" />
+                    <input id="calculadoraImcInfoInputNome" class="calculadoraImcInfoInputNome" name="nome" required/>
                 </div>
 
                 <div class="calculadoraImcInfoDados">
                     <div>
                         <label for="idade">Idade</label>
                         <input id="calculadoraImcInfoInputIdade" required class="calculadoraImcInfoInputIdade"
-                            type="number" name="idade" />
+                            type="number" name="idade" required/>
                     </div>
                     <div>
                         <label for="sexo">Sexo</label>
@@ -45,13 +45,13 @@
                     <div>
                         <label for="altura">Altura</label>
                         <input id="calculadoraImcInfoInputAltura" class="calculadoraImcInfoInputAltura" type="text"
-                            name="altura" />
+                            name="altura" required/>
                     </div>
 
                     <div>
                         <label for="peso">Peso</label>
                         <input id="calculadoraImcInfoInputPeso" class="calculadoraImcInfoInputPeso" type="number"
-                            name="peso" />
+                            name="peso" required/>
                     </div>
                 </div>
 
@@ -71,16 +71,17 @@
                     <div id="nome" class="resultadosNome"></div>
                     <div id="idade"></div>
                 </div>
-                <div id="sexo" class="sexo"></div>
+                <div id="sexo" class="resultadosSexo"></div>
                 <div id="resultadosAlturaPeso" class="resultadosAlturaPeso">
                     <div id="altura"></div>
                     <div id="peso"></div>
                 </div>
-                <div id="textoSeuIMC"></div>
-                <div id="resultado"></div>
-
+                <div class="resultadosTextoIMCResultadoIMC">
+                    <div id="textoSeuIMC"></div>
+                    <div id="resultadoIMC"></div>
+                </div>
             </div>
-        </section>
+        </form>
     </main>
     <script src="./script.js"></script>
 </body>
