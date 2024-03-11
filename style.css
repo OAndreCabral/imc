@@ -1,7 +1,25 @@
-.calculadora {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     display: flex;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 24px;
     justify-content: center;
-    background-color: #1A1535;
+    background-color: var(--corRoxoBackGround);
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --corRosaClaro: #D077AB;
+    --corTextoBranco: #FCFCF4;
+    --corRoxoFundoInfo: #302A4E;
+    --corRoxoBackGround: #1A1535;
+    --corRosaResultados: #FF8DD0;
 }
 
 .calculadoraImc {
@@ -10,71 +28,129 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    gap: 10px;
 }
 
 .calculadoraImcTitulo {
     width: 750px;
-    color: #D077AB;
+    color: var(--corRosaClaro)
 }
 
 .calculadoraImcInfo {
     display: flex;
     align-items: center;
-    justify-self: left;
+    justify-content: center;
     flex-direction: column;
-    background-color: #302A4E;
-    padding-top: 25px;
+    background-color: var(--corRoxoFundoInfo);
     width: 750px;
-
+    padding: 25px;
+    border-radius: 12px;
 }
 
 .calculadoraImcInfoNome {
     display: flex;
-    align-items: start;
     flex-direction: column;
-    width: 80%;
+    width: 600px;
+    text-align: start;
+    padding: 25px;
 }
 
-.calculadoraImcInfoNomeInput {
+.calculadoraImcInfoInputNome {
     width: 100%;
-    border-radius: 6px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 24px;
 }
 
 .calculadoraImcInfoDados {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    width: 550px;
+    justify-content: space-between;
+    text-align: start;
+    gap: 20px;
+    padding: 25px;
+    width: 600px;
 }
 
-.calculadoraImcInfoDadosIdadeSexo {
-    display: flex;
-    flex-direction: column;  
-    text-align: left;
-}
-
-.calculadoraImcInfoIdadeInput {
-
+.calculadoraImcInfoInputAltura,
+.calculadoraImcInfoInputPeso {
     width: 100%;
-    border-radius: 6px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 12px;
 }
 
-.calculadoraImcInfoSexoInput {
-    width: 100%;
-    border-radius: 6px;
+.calculadoraImcInfoInputIdade {
+    width: 265px;
+    padding: 10px;
+    height: 35px;
+    border-radius: 12px;
 }
 
+.calculadoraImcInfoInputSexo {
+    padding: 10px;
+    width: 265px;
+    height: 35px;
+    border-radius: 12px;
+}
 
 .calculadoraImcInfoBotao {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    width: 150px;
+    justify-content: center;
+    padding: 25px;
+    width: 600px;
+    gap: 25px;
+}
+
+.calculadoraImcInfoBotaoCalcular {
+    padding: 25px;
+    border-radius: 12px;
+    background-color: var(--corRosaClaro);
+    font-size: 32px;
+    color: var(--corTextoBranco);
+}
+
+.calculadoraImcInfoBotaoLimparDados {
+    padding: 25px;
+    border-radius: 12px;
+    background-color: var(--corRoxoFundoInfo);
+    color: var(--corTextoBranco);
+    border-color: var(--corRosaClaro);
+    font-size: 26px;
+    border-width: 3px;
 }
 
 .resultados {
-    background-color: #FF8DD0;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    align-items: center;
+    gap: 15px;
+    width: 750px;
+    height: 450px;
+    font-size: 42px;
+    font-weight: bold;
+    border-radius: 24px;
+    background-color: var(--corRosaResultados);
+}
+
+.resultadosNome {
+    color: var(--corRoxoFundoInfo);
+}
+
+.resultadosNomeIdade,
+.resultadosAlturaPeso {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.sexo {
+    font-size: 24px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
 }
